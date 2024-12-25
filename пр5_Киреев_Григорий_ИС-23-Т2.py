@@ -1,5 +1,4 @@
 class Task:
-class Task:
     def __init__(self, title):  
         self.title = title
         self.completed = False
@@ -31,7 +30,7 @@ class TaskScheduler:
         for i, task in enumerate(self.tasks):
             print(f"{i}: {task}")
 
-if __name__ == "__main__":  
+if __name__ == "__main__":  # Исправлено: name на __name__
     scheduler = TaskScheduler()
     scheduler.add_task("Купить молоко")
     scheduler.add_task("Сделать домашнее задание")
